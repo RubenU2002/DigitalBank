@@ -1,0 +1,36 @@
+create procedure sp_crear_usuario
+@Nombre varchar(100),
+@FechaNac datetime,
+@Sexo varchar(1)
+as
+INSERT INTO usuariosPruebaTec(Nombre,FechaNac,Sexo) values(@Nombre,@FechaNac,@Sexo);
+go
+set dateformat dmy;
+
+create procedure sp_eliminar_usuario
+@Idusuario int
+as
+delete from usuariosPruebaTec 
+where IdUsuario = @Idusuario;
+go
+create procedure sp_actualizar_usuario
+@Idusario int,
+@Nombre varchar(100),
+@FechaNac datetime,
+@Sexo varchar(1)
+as
+update usuariosPruebaTec
+set Nombre=@Nombre,
+FechaNac=@FechaNac,
+Sexo=@Sexo
+where IdUsuario=@Idusario;
+go
+create procedure sp_leer_usuario
+@Idusuario int
+as
+select * from usuariosPruebaTec where IdUsuario=@Idusuario;
+go
+create procedure sp_leer_todos
+as 
+select * from usuariosPruebaTec;
+go

@@ -10,3 +10,5 @@ C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.csproj.CoreCompi
 C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.csproj.CopyComplete
 C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.dll
 C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.pdb
+C:\Users\rubme\source\repos\DigitalBank\LogNeg\obj\Debug\LogNeg.Properties.Resources.resources
+C:\Users\rubme\source\repos\DigitalBank\LogNeg\obj\Debug\LogNeg.csproj.GenerateResource.cache

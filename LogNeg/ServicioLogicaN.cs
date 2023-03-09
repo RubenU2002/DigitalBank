@@ -2,6 +2,7 @@
 using EntidadesPro;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -14,6 +15,7 @@ namespace LogNeg
     public class ServicioLogicaN : IServicioLogicaN
     {
         private readonly string _stringConnection = "Data Source=LAPTOP-4F1904VM;Initial Catalog=PruebaTec;Integrated Security=True";
+        //private readonly string _stringConnection = (string)ConfigurationManager.AppSettings["sqlstring"];
         private DataBase _objAccesoDatos = null;
         private ModoConexion _mode;
         private enum _sp { crear, eliminar, actualizar, leer }
@@ -56,7 +58,6 @@ namespace LogNeg
         {
             if (ObjAccesoDatos != null)
             {
-                Console.WriteLine("entro al create y if");
                 ObjAccesoDatos.CRUD((int)_sp.crear, user);
             }
         }

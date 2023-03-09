@@ -14,7 +14,7 @@
             <label>Nombre</label>
             <input required asp-for="persona.Nombre" type="text" maxlength="100" class="mr-5"/>
             <label>Fecha Nacimiento</label>
-            <input required asp-for="persona.FechaNac" type="date" min="1800-01-01" max="2023-12-31" />
+            <input required asp-for="persona.FechaNac" type="date" value="2000-01-01" min="1800-01-01" max="2023-12-31" />
             <label>Sexo</label>
             <select required asp-for="persona.Sexo">
                 <option disabled selected value="">---</option>
