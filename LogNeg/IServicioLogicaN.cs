@@ -39,10 +39,7 @@ namespace LogNeg
     {
         private string _errorMsj = string.Empty;
         private SqlConnection _conexion;
-
-        [DataMember]
         public string ErrorMsj1 { get => _errorMsj; set => _errorMsj = value; }
-        [DataMember]
         public SqlConnection Conexion { get => _conexion; set => _conexion = value; }
 
     }

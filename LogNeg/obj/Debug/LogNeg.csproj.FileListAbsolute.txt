@@ -1,0 +1,12 @@
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\LogNeg.dll.config
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\LogNeg.dll
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\LogNeg.pdb
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\AccesoDatosPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\EntidadesPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\AccesoDatosPro.pdb
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\bin\Debug\EntidadesPro.pdb
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.csproj.AssemblyReference.cache
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.csproj.CoreCompileInputs.cache
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.csproj.CopyComplete
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.dll
+C:\Users\rubme\Source\Repos\DigitalBank\LogNeg\obj\Debug\LogNeg.pdb

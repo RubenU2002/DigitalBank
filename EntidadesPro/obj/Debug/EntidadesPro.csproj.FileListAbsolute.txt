@@ -1,0 +1,6 @@
+C:\Users\rubme\Source\Repos\DigitalBank\EntidadesPro\bin\Debug\EntidadesPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\EntidadesPro\bin\Debug\EntidadesPro.pdb
+C:\Users\rubme\Source\Repos\DigitalBank\EntidadesPro\obj\Debug\EntidadesPro.csproj.AssemblyReference.cache
+C:\Users\rubme\Source\Repos\DigitalBank\EntidadesPro\obj\Debug\EntidadesPro.csproj.CoreCompileInputs.cache
+C:\Users\rubme\Source\Repos\DigitalBank\EntidadesPro\obj\Debug\EntidadesPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\EntidadesPro\obj\Debug\EntidadesPro.pdb

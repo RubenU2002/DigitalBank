@@ -1,0 +1,9 @@
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\bin\Debug\AccesoDatosPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\bin\Debug\AccesoDatosPro.pdb
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\bin\Debug\EntidadesPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\bin\Debug\EntidadesPro.pdb
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\obj\Debug\AccesoDatosPro.csproj.AssemblyReference.cache
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\obj\Debug\AccesoDatosPro.csproj.CoreCompileInputs.cache
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\obj\Debug\AccesoDatosPro.csproj.CopyComplete
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\obj\Debug\AccesoDatosPro.dll
+C:\Users\rubme\Source\Repos\DigitalBank\AccesoDatosPro\obj\Debug\AccesoDatosPro.pdb
