@@ -1,0 +1,35 @@
+﻿@page
+@using EntidadesPro;
+@model IndexModel
+@{
+    ViewData["Title"] = "Usuario";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Usuarios</h1>
+    <form method="post" class="card p-3">
+        <div class="row">
+        </div>
+        <div class="form-goup mb-0 align-middle">
+            <label>Nombre</label>
+            <input required asp-for="persona.Nombre" type="text" maxlength="100" class="mr-5"/>
+            <label>Fecha Nacimiento</label>
+            <input required asp-for="persona.FechaNac" type="date" min="1800-01-01" max="2023-12-31" />
+            <label>Sexo</label>
+            <select required asp-for="persona.Sexo">
+                <option disabled selected value="">---</option>
+                @foreach(var sex in Enum.GetValues(typeof(sexoUs)))
+                {
+                    <option value="@sex">@sex</option>
+                }
+            </select>
+            <button class="btn btn-primary">Agregar Usuario</button>
+        </div>
+    </form>
+    @if (Model.created == true)
+    {
+        <div class="alert alert-success" role="alert">
+            Se ha creado correctamente al usuario
+        </div>
+    }
+</div>

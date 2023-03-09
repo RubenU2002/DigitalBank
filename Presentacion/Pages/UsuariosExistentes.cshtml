@@ -1,0 +1,83 @@
+﻿@page
+@using EntidadesPro
+@model Presentacion.Pages.UsuariosExistentesModel
+@{
+    ViewData["Tittle"] = "Usuarios Existentes";
+}
+
+@if (Model.Editing.IdUsuario != (-10) )
+{
+    <h1>@Model.Editing.ToString()</h1>
+    <form method="post" class="card p-3">
+        <div class="row">
+        </div>
+        <div class="form-goup mb-0 align-middle">
+            <label>Nombre</label>
+            <input required asp-for="Editing.Nombre" value="@Model.Editing.Nombre" type="text" maxlength="100" class="mr-5" />
+            <label>Fecha Nacimiento</label>
+            <input required asp-for="Editing.FechaNac" type="date" min="1800-01-01" max="2023-12-31" />
+            <label>Sexo</label>
+            <select required asp-for="Editing.Sexo">
+                <option selected value="@Model.Editing.Sexo">@Model.Editing.Sexo</option>
+                @foreach(var sex in Enum.GetValues(typeof(sexoUs)))
+                {   
+                    if (sex.ToString() != @Model.Editing.Sexo)
+                    {
+                        <option value="@sex">@sex</option>
+                    }
+                }
+                
+            </select>
+            <button asp-route-id="@Model.Editing.IdUsuario" asp-page-handler="OnPost" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+    </form>
+}
+@if (Model.deleted == true)
+{
+    <div class="alert alert-success" role="alert">
+        Se ha eliminado correctamente al usuario
+    </div>
+}
+@if (Model.updated == true)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Actualizado correctamente!</strong> Puedes revisar que ya no aparece en la lista.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (Model.totalPersonas != null)
+{   
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha nacimiento</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model.totalPersonas)
+        {
+            <tr>
+                <th scope="col">@user.Nombre</th>
+                <th scope="col">@user.FechaNac.ToShortDateString()</th>
+                <th scope="col">@user.Sexo</th>
+                <th scope="col">
+                    <form method="post">
+                        <button asp-page-handler="Edit" asp-route-id="@user.IdUsuario" class="btn btn-secondary">Editar</button>
+                    </form>
+                </th>
+                <th scope="col">
+                    <form method="post">
+                        <button asp-page-handler="Delete" asp-route-id="@user.IdUsuario" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+}else{
+    <h1>No hay registos en la base de datos</h1>
+}
